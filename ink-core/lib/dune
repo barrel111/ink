@@ -1,0 +1,4 @@
+(library
+ (public_name ink-core)
+ (name ink_core)
+ (libraries lwt lwt.unix toml))

@@ -1,0 +1,4 @@
+(library
+  (public_name ink-ext)
+  (name ink_ext) 
+  (libraries ink_core lwt))

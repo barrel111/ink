@@ -1,0 +1,10 @@
+(* open Types *)
+
+(* module type EXTENSION = sig *)
+(*   val name : string *)
+(*   val handles_files : string -> bool *)
+(*   val process_file : build_context -> string -> unit Lwt.t *)
+(*   val init : build_context -> unit Lwt.t *)
+(*   val post_build : build_context -> unit Lwt.t *)
+(*   val get_deps : string -> string list Lwt.t *)
+(* end *)

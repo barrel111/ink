@@ -1,0 +1,5 @@
+(executable
+ (public_name ink)
+ (name main)
+ (package ink-core)
+ (libraries ink_core))
