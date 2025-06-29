@@ -1,11 +1,9 @@
 open Ink_ext.Protocol
 open Sexplib
 
-type ext_process = {
-  name : string; [@warning "-69"]
-  from_ext : in_channel;
-  to_ext : out_channel;
-}
+type ext_proc = { name : string; from_ext : in_channel; to_ext : out_channel }
+
+let name ext = ext.name
 
 let spawn_ext name =
   let cmd = name ^ "_ext" in
