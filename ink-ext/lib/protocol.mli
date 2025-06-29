@@ -1,6 +1,6 @@
 open Sexplib
 
-type ext_msg = Build of string list | Shutdown
+type ext_msg = Build of string list * string | Shutdown
 type main_msg = Done of string list | Error of string
 
 val sexp_of_ext_msg : ext_msg -> Sexp.t

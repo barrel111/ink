@@ -13,8 +13,8 @@ let extension_loop process_files =
   try
     while true do
       match receive_message () with
-      | Build files ->
-          let outputs = process_files files in
+      | Build (files, out_dir) ->
+          let outputs = process_files files out_dir in
           send_message (Done outputs)
       | Shutdown -> exit 0
     done
