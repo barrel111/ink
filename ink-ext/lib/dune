@@ -1,4 +1,5 @@
 (library
   (public_name ink-ext)
   (name ink_ext) 
-  (libraries ink_core lwt))
+  (libraries lwt sexplib)
+  (preprocess (pps ppx_sexp_conv)))
