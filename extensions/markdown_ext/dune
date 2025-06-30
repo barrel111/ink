@@ -1,0 +1,3 @@
+(executable
+ (name markdown_ext)
+ (libraries omd ink_ext))
